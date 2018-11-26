@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Lightbox Example</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="controls">
+		<button type="button" data-filter="all">All</button>
+		<button type="button" data-filter=".white">White</button>
+		<button type="button" data-filter=".blue">Blue</button>
+		<button type="button" data-filter=".withtext">With Caption</button>
+		<button type="button" data-filter=".notext">Without Caption</button>
+		<button type="button" data-sort="order:asc">Ascending</button>
+		<button type="button" data-sort="order:descending">Descending</button>
+		<button type="button" data-sort="random">Random</button>
+	</div>
+	<div class = "gallery container">
+		<a href="images/BlueprintNewLogoPresent-02.jpg" data-lightbox="logodesign" class="mix white withtext" data-order="1"><img src="images/BlueprintNewLogoPresent-02.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-04.jpg" data-lightbox="logodesign" class="mix blue withtext" data-order="2"><img src="images/BlueprintNewLogoPresent-04.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-06.jpg" data-lightbox="logodesign" class="mix white withtext" data-order="3"><img src="images/BlueprintNewLogoPresent-06.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-08.jpg" data-lightbox="logodesign" class="mix blue withtext" data-order="4"><img src="images/BlueprintNewLogoPresent-08.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-10.jpg" data-lightbox="logodesign" class="mix white withtext" data-order="5"><img src="images/BlueprintNewLogoPresent-10.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-12.jpg" data-lightbox="logodesign" class="mix blue withtext" data-order="6"><img src="images/BlueprintNewLogoPresent-12.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-01.jpg" data-lightbox="logodesign" class="mix white notext" data-order="7"><img src="images/BlueprintNewLogoPresent-01.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-03.jpg" data-lightbox="logodesign" class="mix blue notext" data-order="8"><img src="images/BlueprintNewLogoPresent-03.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-05.jpg" data-lightbox="logodesign" class="mix white notext" data-order="9"><img src="images/BlueprintNewLogoPresent-05.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-07.jpg" data-lightbox="logodesign" class="mix blue notext" data-order="10"><img src="images/BlueprintNewLogoPresent-07.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-09.jpg" data-lightbox="logodesign" class="mix white notext" data-order="11"><img src="images/BlueprintNewLogoPresent-09.jpg"></a>
+		<a href="images/BlueprintNewLogoPresent-11.jpg" data-lightbox="logodesign" class="mix blue notext" data-order="12"><img src="images/BlueprintNewLogoPresent-11.jpg"></a>
+	</div>
+	
+	
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script>
+		console.log("work");
+		var containerEl=document.querySelector(".container");
+
+		var mixer=mixitup(containerEl);
+	</script>
+</body>
